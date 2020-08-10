@@ -66,7 +66,7 @@ class CertificateDataSerializer(serializers.Serializer):
         return cert_data.cert_status == CertificateStatuses.requesting and cert_data.request_cert_url is not None
 
 
-class RequirementSerializer(serializers.Serializer):
+class CreditRequirementSerializer(serializers.Serializer):
     """
     Serializer for requirement objects
     """
@@ -86,9 +86,9 @@ class CreditCourseRequirementsSerializer(serializers.Serializer):
     """
     dashboard_url = serializers.SerializerMethodField()
     eligibility_status = serializers.CharField()
-    requirements = RequirementSerializer(many=True)
+    requirements = CreditRequirementSerializer(many=True)
 
-    def get_dashboard_url(self, creditCourseRequirement):
+    def get_dashboard_url(self, _):
         relative_path = reverse('dashboard')
         request = self.context['request']
         return request.build_absolute_uri(relative_path)
@@ -98,7 +98,6 @@ class VerificationDataSerializer(serializers.Serializer):
     """
     Serializer for verification data object
     """
-    expiration = serializers.DateTimeField()
     link = serializers.CharField()
     status = serializers.CharField()
     status_date = serializers.DateTimeField()
@@ -110,7 +109,7 @@ class ProgressTabSerializer(serializers.Serializer):
     """
     certificate_data = CertificateDataSerializer()
     credit_course_requirements = CreditCourseRequirementsSerializer()
-    credit_purchase_url = serializers.CharField()
+    credit_support_url = serializers.CharField()
     courseware_summary = ChapterSerializer(many=True)
     enrollment_mode = serializers.CharField()
     studio_url = serializers.CharField()

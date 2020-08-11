@@ -9,7 +9,7 @@
 -e git+https://github.com/edx/codejail.git@ffec49bb09785fb688afc5d24714d4e43ae8449f#egg=codejail==3.0.1  # via -r requirements/edx/github.in
 -e git+https://github.com/edx/django-wiki.git@0.1.0#egg=django-wiki  # via -r requirements/edx/github.in
 -e git+https://github.com/edx/DoneXBlock.git@2.0.3#egg=done-xblock  # via -r requirements/edx/github.in
--e git+https://github.com/edx/edx-django-utils.git@7c9d5af9d3d4c5aec2e4d2c7265d5949761bd665#egg=edx-django-utils  # via -r requirements/edx/github.in
+-e git+https://github.com/edx/edx-django-utils.git@9d0912f02dbca86a2ac7af7c30b766fec4af2dbc#egg=edx-django-utils  # via -r requirements/edx/github.in
 -e git+https://github.com/jazkarta/edx-jsme.git@690dbf75441fa91c7c4899df0b83d77f7deb5458#egg=edx-jsme  # via -r requirements/edx/github.in
 -e .  # via -r requirements/edx/local.in
 -e git+https://github.com/edx/RateXBlock.git@2.0.1#egg=rate-xblock  # via -r requirements/edx/github.in

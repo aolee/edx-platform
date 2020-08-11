@@ -70,7 +70,7 @@ git+https://github.com/edx/django-ratelimit-backend.git@v2.0.1a5#egg=django-rate
 -e git+https://github.com/edx-solutions/xblock-google-drive.git@2d176468e33c0713c911b563f8f65f7cf232f5b6#egg=xblock-google-drive
 
 # This is just for testing unpinning of psutils before merging
--e git+https://github.com/edx/edx-django-utils.git@7c9d5af9d3d4c5aec2e4d2c7265d5949761bd665#egg=edx-django-utils
+-e git+https://github.com/edx/edx-django-utils.git@9d0912f02dbca86a2ac7af7c30b766fec4af2dbc#egg=edx-django-utils
 
 
 

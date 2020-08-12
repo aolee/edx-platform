@@ -4368,7 +4368,7 @@ msgstr ""
 
 #: common/lib/xmodule/xmodule/video_module/video_xfields.py
 msgid ""
-"If you were assigned a Video ID by edX for the video to play in this "
+"If you were assigned a Video ID by LCMS for the video to play in this "
 "component, enter the ID here. In this case, do not enter values in the "
 "Default Video URL, the Video File URLs, and the YouTube ID fields. If you "
 "were not assigned a Video ID, enter values in those other fields and ignore "
